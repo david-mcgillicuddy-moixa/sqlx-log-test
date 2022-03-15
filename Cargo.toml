@@ -1,0 +1,10 @@
+[package]
+edition = "2018"
+name = "sqlx-log-test"
+version = "0.1.0"
+
+[dependencies]
+actix = "0.12"
+actix-rt = "2.2.0"
+simplelog = "*"
+sqlx = {path = "../sqlx", version = "0.5.11", features = ["sqlite", "runtime-actix-rustls"]}
