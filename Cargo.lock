@@ -821,7 +821,7 @@ dependencies = [
 [[package]]
 name = "sqlx"
 version = "0.5.11"
-source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx#39018ae8398445fb1c27ce652f4687ddd435b682"
+source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx?rev=ebb979536#ebb979536501bbea1ce2465e85f87bdb655522b4"
 dependencies = [
  "sqlx-core",
  "sqlx-macros",
@@ -830,7 +830,7 @@ dependencies = [
 [[package]]
 name = "sqlx-core"
 version = "0.5.11"
-source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx#39018ae8398445fb1c27ce652f4687ddd435b682"
+source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx?rev=ebb979536#ebb979536501bbea1ce2465e85f87bdb655522b4"
 dependencies = [
  "ahash",
  "atoi",
@@ -883,7 +883,7 @@ dependencies = [
 [[package]]
 name = "sqlx-macros"
 version = "0.5.11"
-source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx#39018ae8398445fb1c27ce652f4687ddd435b682"
+source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx?rev=ebb979536#ebb979536501bbea1ce2465e85f87bdb655522b4"
 dependencies = [
  "dotenv",
  "either",
@@ -901,7 +901,7 @@ dependencies = [
 [[package]]
 name = "sqlx-rt"
 version = "0.5.11"
-source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx#39018ae8398445fb1c27ce652f4687ddd435b682"
+source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx?rev=ebb979536#ebb979536501bbea1ce2465e85f87bdb655522b4"
 dependencies = [
  "actix-rt",
  "once_cell",
