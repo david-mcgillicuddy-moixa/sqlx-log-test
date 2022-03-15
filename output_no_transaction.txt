@@ -1,0 +1,46 @@
+19:54:02 [INFO] PRAGMA page_size = 4096; …; rows: 2, elapsed: 355.940µs
+
+PRAGMA page_size = 4096;
+PRAGMA locking_mode = NORMAL;
+PRAGMA journal_mode = WAL;
+PRAGMA foreign_keys = ON;
+PRAGMA synchronous = FULL;
+PRAGMA auto_vacuum = NONE;
+PRAGMA vdbe_debug = TRUE;
+
+19:54:02 [INFO] CREATE TABLE IF NOT …; rows: 0, elapsed: 403.247µs
+
+CREATE TABLE IF NOT EXISTS todos (
+  id INTEGER PRIMARY KEY NOT NULL,
+  description TEXT NOT NULL,
+  done BOOLEAN NOT NULL DEFAULT 0
+);
+
+19:54:02 [INFO] INSERT INTO todos ( …; rows: 3, elapsed: 68.011µs
+
+INSERT INTO
+  todos (description)
+VALUES
+  ("foo"),
+  ("bar"),
+  ("baz")
+
+rows_affected: 3
+19:54:02 [INFO] UPDATE todos SET done …; rows: 1, elapsed: 77.938µs
+
+UPDATE
+  todos
+SET
+  done = TRUE
+WHERE
+  description = "foo"
+
+rows_affected: 1
+19:54:02 [INFO] DELETE FROM todos WHERE …; rows: 2, elapsed: 113.348µs
+
+DELETE FROM
+  todos
+WHERE
+  description LIKE "ba%"
+
+rows_affected: 2
