@@ -1,4 +1,4 @@
-19:57:22 [INFO] PRAGMA page_size = 4096; …; rows: 2, elapsed: 376.969µs
+20:17:37 [INFO] PRAGMA page_size = 4096; …; rows: 2, elapsed: 522.953µs
 
 PRAGMA page_size = 4096;
 PRAGMA locking_mode = NORMAL;
@@ -8,7 +8,8 @@ PRAGMA synchronous = FULL;
 PRAGMA auto_vacuum = NONE;
 PRAGMA vdbe_debug = TRUE;
 
-19:57:22 [INFO] CREATE TABLE IF NOT …; rows: 0, elapsed: 278.442µs
+20:17:37 [INFO] BEGIN; rows: 0, elapsed: 49.485µs
+20:17:37 [INFO] CREATE TABLE IF NOT …; rows: 0, elapsed: 241.497µs
 
 CREATE TABLE IF NOT EXISTS todos (
   id INTEGER PRIMARY KEY NOT NULL,
@@ -16,7 +17,7 @@ CREATE TABLE IF NOT EXISTS todos (
   done BOOLEAN NOT NULL DEFAULT 0
 );
 
-19:57:22 [INFO] INSERT INTO todos ( …; rows: 3, elapsed: 166.849µs
+20:17:37 [INFO] INSERT INTO todos ( …; rows: 3, elapsed: 128.634µs
 
 INSERT INTO
   todos (description)
@@ -26,7 +27,7 @@ VALUES
   ("baz")
 
 rows_affected: 3
-19:57:22 [INFO] UPDATE todos SET done …; rows: 1, elapsed: 83.120µs
+20:17:37 [INFO] UPDATE todos SET done …; rows: 1, elapsed: 143.362µs
 
 UPDATE
   todos
@@ -36,11 +37,13 @@ WHERE
   description = "foo"
 
 rows_affected: 1
-19:57:22 [INFO] DELETE FROM todos WHERE …; rows: 2, elapsed: 64.525µs
+20:17:37 [INFO] DELETE FROM todos WHERE …; rows: 2, elapsed: 80.226µs
 
 DELETE FROM
   todos
 WHERE
   description LIKE "ba%"
 
+rows_affected: 2
+20:17:37 [INFO] COMMIT; rows: 2, elapsed: 64.429µs
 rows_affected: 2
