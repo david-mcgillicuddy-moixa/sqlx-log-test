@@ -224,6 +224,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e78d4f1cc4ae33bbfc157ed5d5a5ef3bc29227303d595861deb238fcec4e9457"
 
 [[package]]
+name = "event-listener"
+version = "2.5.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "77f3309417938f28bf8228fcff79a4a37103981e3e186d2ccd19c74b38f4eb71"
+
+[[package]]
 name = "flume"
 version = "0.10.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -440,9 +446,9 @@ checksum = "ad5c14e80759d0939d013e6ca49930e59fc53dd8e5009132f76240c179380c09"
 
 [[package]]
 name = "libsqlite3-sys"
-version = "0.23.2"
+version = "0.24.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d2cafc7c74096c336d9d27145f7ebd4f4b6f95ba16aa5a282387267e6925cb58"
+checksum = "898745e570c7d0453cc1fbc4a701eb6c662ed54e8fec8b7d14be137ebeeb9d14"
 dependencies = [
  "cc",
  "pkg-config",
@@ -821,7 +827,7 @@ dependencies = [
 [[package]]
 name = "sqlx"
 version = "0.5.11"
-source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx?rev=ebb979536#ebb979536501bbea1ce2465e85f87bdb655522b4"
+source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx?rev=f2c5dc30#f2c5dc30a407cbee8576510ec58ad4af66cd7194"
 dependencies = [
  "sqlx-core",
  "sqlx-macros",
@@ -830,7 +836,7 @@ dependencies = [
 [[package]]
 name = "sqlx-core"
 version = "0.5.11"
-source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx?rev=ebb979536#ebb979536501bbea1ce2465e85f87bdb655522b4"
+source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx?rev=f2c5dc30#f2c5dc30a407cbee8576510ec58ad4af66cd7194"
 dependencies = [
  "ahash",
  "atoi",
@@ -840,6 +846,7 @@ dependencies = [
  "crc",
  "crossbeam-queue",
  "either",
+ "event-listener",
  "flume",
  "futures-channel",
  "futures-core",
@@ -883,7 +890,7 @@ dependencies = [
 [[package]]
 name = "sqlx-macros"
 version = "0.5.11"
-source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx?rev=ebb979536#ebb979536501bbea1ce2465e85f87bdb655522b4"
+source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx?rev=f2c5dc30#f2c5dc30a407cbee8576510ec58ad4af66cd7194"
 dependencies = [
  "dotenv",
  "either",
@@ -901,7 +908,7 @@ dependencies = [
 [[package]]
 name = "sqlx-rt"
 version = "0.5.11"
-source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx?rev=ebb979536#ebb979536501bbea1ce2465e85f87bdb655522b4"
+source = "git+https://github.com/david-mcgillicuddy-moixa/sqlx?rev=f2c5dc30#f2c5dc30a407cbee8576510ec58ad4af66cd7194"
 dependencies = [
  "actix-rt",
  "once_cell",

@@ -7,4 +7,4 @@ version = "0.1.0"
 actix = "0.12"
 actix-rt = "2.2.0"
 simplelog = "*"
-sqlx = {git = "https://github.com/david-mcgillicuddy-moixa/sqlx", rev = "ebb979536", version = "0.5.11", features = ["sqlite", "runtime-actix-rustls"]}
+sqlx = {git = "https://github.com/david-mcgillicuddy-moixa/sqlx", rev = "f2c5dc30", version = "0.5.11", features = ["sqlite", "runtime-actix-rustls"]}
